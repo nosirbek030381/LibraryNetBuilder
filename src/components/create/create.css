@@ -1,0 +1,32 @@
+.preloader-box{
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+	position: fixed;
+	top: 0;
+	backdrop-filter: blur(5px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.preloader {
+	width: 50px;
+	height: 50px;
+	border: 4px solid white;
+	border-radius: 50%;
+	border-bottom: none;
+	border-top: none;
+	animation: loader 1s infinite;
+}
+
+
+@keyframes loader {
+	from {
+			transform: rotate(0deg);
+	}
+
+	to {
+			transform: rotate(360deg);
+	}
+}
