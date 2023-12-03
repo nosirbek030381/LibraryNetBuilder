@@ -6,8 +6,7 @@ import './create.css';
 const Create = () => {
 	const [loading, setLoading] = useState(false);
 
-
-	const URL = 'https://konstructor.librarynetbuilder.uz/create';
+	const URL = 'http://127.0.0.1:8000/create';
 
 	const initialData = {
 		name: '',

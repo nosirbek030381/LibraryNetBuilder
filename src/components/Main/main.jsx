@@ -37,9 +37,9 @@ const Main = () => {
 					justifyContent: 'center',
 				}}
 			>
-				<Typography fontSize={28} color={'white'} textTransform={'uppercase'}>
+				<Typography variant='subtitle1' fontSize={28} color={'white'} textTransform={'uppercase'}>
 					Assalomu alaykum
-					<Typography fontSize={25} color={'white'}>
+					<Typography fontSize={25} color={'white'} variant='subtitle2'>
 						Saytimizga Xush kelibsiz!
 					</Typography>
 				</Typography>

@@ -39,7 +39,10 @@ function DrawerAppBar(props) {
 
 	const drawer = (
 		<Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-			<Typography variant='h6' sx={{ my: 2, alignItems: 'center', display: 'flex' }}>
+			<Typography
+				variant='h6'
+				sx={{ alignItems: 'center', display: 'flex', justifyContent: 'center' }}
+			>
 				<img src={Logo} alt='' height={30} style={{ borderRadius: '50%', marginRight: '10px' }} />
 				LibraryNetBuilder
 			</Typography>
@@ -59,7 +62,7 @@ function DrawerAppBar(props) {
 	const container = window !== undefined ? () => window().document.body : undefined;
 
 	return (
-		<Box sx={{ display: 'flex', alignItems: 'center' }}>
+		<Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
 			<CssBaseline />
 			<AppBar component='nav'>
 				<Toolbar>
@@ -74,10 +77,9 @@ function DrawerAppBar(props) {
 					</IconButton>
 					<Typography
 						variant='h6'
-						component='div'
 						sx={{
 							flexGrow: 1,
-							display: { xs: '', sm: 'block' },
+							display: 'flex',
 							alignItems: 'center',
 						}}
 					>
